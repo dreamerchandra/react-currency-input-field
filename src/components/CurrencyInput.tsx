@@ -36,6 +36,7 @@ export const CurrencyInput: FC<CurrencyInputProps> = forwardRef<
       groupSeparator = ',',
       turnOffSeparators = false,
       turnOffAbbreviations = false,
+      isIndianNumberSystem = false,
       ...props
     }: CurrencyInputProps,
     ref
@@ -57,6 +58,7 @@ export const CurrencyInput: FC<CurrencyInputProps> = forwardRef<
       groupSeparator,
       turnOffSeparators,
       prefix,
+      isIndianNumberSystem,
     };
 
     const cleanValueOptions: Partial<CleanValueOptions> = {
